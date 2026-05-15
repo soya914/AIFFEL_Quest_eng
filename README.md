@@ -2,6 +2,7 @@
 
 ##레포 구조
 
+```bash
 ├─01_Python
 │  ├─py01
 │  │      py01.ipynb
@@ -165,3 +166,4 @@
     └─Quest05
             Quest05.ipynb
             README.md
+            
