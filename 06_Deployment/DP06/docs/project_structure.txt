@@ -1,0 +1,48 @@
+day6/
+├── app
+│   ├── auth.py
+│   ├── auth_demo.py
+│   ├── error_handlers.py
+│   ├── image_api.py
+│   ├── image_utils.py
+│   ├── logger_config.py
+│   ├── middleware.py
+│   └── model_utils.py
+├── data
+├── docs
+│   ├── 01_swagger_ui.png
+│   ├── 02_swagger_try_it_out.png
+│   ├── 03_swagger_success_200.png
+│   ├── 04_swagger_no_key_401.png
+│   ├── 05_swagger_wrong_key_401.png
+│   ├── 06_swagger_bad_format_400.png
+│   ├── 07_auth_compare_swagger.png
+│   ├── 08_auth_compare_result.png
+│   ├── 09_notebook_6_1_setup.png
+│   ├── 10_notebook_6_2_server_run.png
+│   ├── 11_notebook_6_3_no_key_401.png
+│   ├── 12_notebook_6_4_wrong_key_401.png
+│   ├── 13_notebook_6_5_success_200.png
+│   ├── 14_notebook_6_6_bad_format_400.png
+│   ├── 15_notebook_6_7_batch5.png
+│   ├── 16_notebook_6_8_swagger.png
+│   ├── compare_auth_output.txt
+│   ├── integration_test_output.txt
+│   └── project_structure.txt
+├── models
+│   └── mnist_state_dict.pth
+├── notebooks
+│   └── 모델배포개론06_최종.ipynb
+├── samples
+│   ├── digit_1.png
+│   ├── digit_2.png
+│   ├── digit_7.png
+│   └── not_an_image.txt
+├── .gitignore
+├── README.md
+├── SUBMISSION_최종.md
+├── compare_auth.py
+├── integration_test.py
+├── requirements.txt
+├── run_auth_demo.ps1
+└── run_server.ps1
