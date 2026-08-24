@@ -1,0 +1,122 @@
+INFO:     Started server process [8992]
+INFO:     Waiting for application startup.
+2026-08-24 16:23:06,479 | INFO    | summarizer.api | ============================================================
+2026-08-24 16:23:06,480 | INFO    | summarizer.api | 서버 startup — 모델 로드를 시작합니다.
+2026-08-24 16:23:06,481 | INFO    | summarizer.model | 모델 로드 시작: digit82/kobart-summarization (device=cpu)
+You passed `num_labels=3` which is incompatible to the `id2label` map of length `2`.
+Device set to use cpu
+2026-08-24 16:23:12,220 | INFO    | summarizer.model | 모델 로드 완료 (5.7초)
+2026-08-24 16:23:12,221 | INFO    | summarizer.api | 서버 준비 완료. 요청을 받을 수 있습니다.
+2026-08-24 16:23:12,221 | INFO    | summarizer.api | ============================================================
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64228 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64233 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64234 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 16:23:15,052 | WARNING | summarizer.api | 401 — API Key가 필요합니다. X-API-Key 헤더를 포함해 주세요.
+INFO:     127.0.0.1:64235 - "POST /predict HTTP/1.1" 401 Unauthorized
+2026-08-24 16:23:15,062 | WARNING | summarizer.api | 401 — 유효하지 않은 API Key입니다.
+INFO:     127.0.0.1:64236 - "POST /predict HTTP/1.1" 401 Unauthorized
+2026-08-24 16:23:15,082 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+2026-08-24 16:23:20,143 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 5053ms
+INFO:     127.0.0.1:64237 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:23:20,153 | WARNING | summarizer.api | 422 입력 검증 실패 — ['text: 필수 항목입니다.']
+INFO:     127.0.0.1:64238 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,161 | WARNING | summarizer.api | 422 입력 검증 실패 — ['text: 30자 이상이어야 합니다.']
+INFO:     127.0.0.1:64239 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,171 | WARNING | summarizer.api | 422 입력 검증 실패 — ['(본문): text가 공백 문자로만 이루어져 있습니다.']
+INFO:     127.0.0.1:64240 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,179 | WARNING | summarizer.api | 422 입력 검증 실패 — ['text: 8000자 이하여야 합니다.']
+INFO:     127.0.0.1:64241 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,184 | WARNING | summarizer.api | 422 입력 검증 실패 — ['(본문): min_length(60)는 max_length(30)보다 작아야 합니다.']
+INFO:     127.0.0.1:64242 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,211 | WARNING | summarizer.api | 422 입력 검증 실패 — ['num_beams: 8 이하여야 합니다.']
+INFO:     127.0.0.1:64243 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,217 | WARNING | summarizer.api | 422 입력 검증 실패 — ['max_length: 정수여야 합니다.']
+INFO:     127.0.0.1:64244 - "POST /predict HTTP/1.1" 422 Unprocessable Content
+2026-08-24 16:23:20,227 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:25,299 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 5068ms
+INFO:     127.0.0.1:64245 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:23:25,330 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:28,497 | INFO    | summarizer.api | [사용자A] 요약 완료 — 61자, 3164ms
+INFO:     127.0.0.1:64246 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:23:28,518 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:33,303 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 4779ms
+INFO:     127.0.0.1:64247 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:23:33,329 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:33,337 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:33,343 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:33,345 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:23:47,602 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 14267ms
+INFO:     127.0.0.1:64248 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:23:47,809 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 14466ms
+INFO:     127.0.0.1:64249 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:01,438 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 13830ms
+INFO:     127.0.0.1:64250 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:01,652 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 13836ms
+INFO:     127.0.0.1:64251 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:01,665 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+INFO:     127.0.0.1:64253 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 16:24:06,653 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 4984ms
+INFO:     127.0.0.1:64252 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:06,668 | INFO    | summarizer.api | [사용자A] 요약 요청 — 2490자, beams=4
+2026-08-24 16:24:29,092 | INFO    | summarizer.api | [사용자A] 요약 완료 — 187자, 22411ms
+INFO:     127.0.0.1:61800 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59248 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 16:24:37,822 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=1
+The following generation flags are not valid and may be ignored: ['early_stopping']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+2026-08-24 16:24:41,164 | INFO    | summarizer.api | [사용자A] 요약 완료 — 86자, 3339ms
+INFO:     127.0.0.1:59249 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:41,172 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=2
+2026-08-24 16:24:44,449 | INFO    | summarizer.api | [사용자A] 요약 완료 — 86자, 3274ms
+INFO:     127.0.0.1:59250 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:44,459 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:24:49,943 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 5480ms
+INFO:     127.0.0.1:59252 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:49,957 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=8
+2026-08-24 16:24:58,132 | INFO    | summarizer.api | [사용자A] 요약 완료 — 116자, 8172ms
+INFO:     127.0.0.1:59253 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:24:58,146 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:25:01,241 | INFO    | summarizer.api | [사용자A] 요약 완료 — 61자, 3091ms
+INFO:     127.0.0.1:52780 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:25:01,270 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:25:06,314 | INFO    | summarizer.api | [사용자A] 요약 완료 — 97자, 5039ms
+INFO:     127.0.0.1:52781 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:25:06,324 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:25:11,375 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 5048ms
+INFO:     127.0.0.1:52782 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:25:11,383 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:25:16,413 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 5027ms
+INFO:     127.0.0.1:52783 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:25:16,422 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:25:21,523 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 5094ms
+INFO:     127.0.0.1:64961 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:25:21,534 | INFO    | summarizer.api | [사용자A] 요약 요청 — 2000자, beams=4
+2026-08-24 16:25:33,054 | INFO    | summarizer.api | [사용자A] 요약 완료 — 79자, 11505ms
+INFO:     127.0.0.1:64962 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:25:33,064 | INFO    | summarizer.api | [사용자A] 요약 요청 — 2490자, beams=4
+2026-08-24 16:25:55,088 | INFO    | summarizer.api | [사용자A] 요약 완료 — 187자, 22015ms
+INFO:     127.0.0.1:64963 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62567 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 16:28:02,223 | INFO    | summarizer.api | [사용자A] 요약 요청 — 326자, beams=4
+2026-08-24 16:28:08,385 | INFO    | summarizer.api | [사용자A] 요약 완료 — 99자, 6159ms
+INFO:     127.0.0.1:62568 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:28:08,397 | INFO    | summarizer.api | [사용자A] 요약 요청 — 319자, beams=4
+2026-08-24 16:28:15,390 | INFO    | summarizer.api | [사용자A] 요약 완료 — 66자, 6990ms
+INFO:     127.0.0.1:59427 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:28:15,397 | INFO    | summarizer.api | [사용자A] 요약 요청 — 359자, beams=4
+2026-08-24 16:28:25,405 | INFO    | summarizer.api | [사용자A] 요약 완료 — 121자, 10002ms
+INFO:     127.0.0.1:59429 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:28:25,415 | INFO    | summarizer.api | [사용자A] 요약 요청 — 2247자, beams=4
+2026-08-24 16:28:48,378 | INFO    | summarizer.api | [사용자A] 요약 완료 — 141자, 22953ms
+INFO:     127.0.0.1:59431 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:28:48,387 | INFO    | summarizer.api | [사용자A] 요약 요청 — 2490자, beams=4
+2026-08-24 16:29:09,897 | INFO    | summarizer.api | [사용자A] 요약 완료 — 187자, 21500ms
+INFO:     127.0.0.1:49873 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55973 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 16:33:41,276 | INFO    | summarizer.api | [사용자A] 요약 요청 — 92자, beams=4
+2026-08-24 16:33:46,338 | INFO    | summarizer.api | [사용자A] 요약 완료 — 68자, 5060ms
+INFO:     127.0.0.1:55975 - "POST /predict HTTP/1.1" 200 OK
+2026-08-24 16:33:46,351 | WARNING | summarizer.api | 401 — 유효하지 않은 API Key입니다.
+INFO:     127.0.0.1:55978 - "POST /predict HTTP/1.1" 401 Unauthorized
