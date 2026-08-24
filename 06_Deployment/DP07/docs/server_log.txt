@@ -1,0 +1,85 @@
+INFO:     Started server process [24144]
+INFO:     Waiting for application startup.
+2026-08-24 11:03:17 INFO     [chatbot_api] 챗봇 모델 로드 중: kakaocorp/kanana-nano-2.1b-instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-08-24 11:03:31 INFO     [chatbot_api] 모델 로드 완료
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53410 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53411 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53421 - "GET /health HTTP/1.1" 200 OK
+POST /chat → 401 (0.003s)
+INFO:     127.0.0.1:53422 - "POST /chat HTTP/1.1" 401 Unauthorized
+POST /chat → 401 (0.002s)
+INFO:     127.0.0.1:53423 - "POST /chat HTTP/1.1" 401 Unauthorized
+2026-08-24 11:03:34 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:53424 - "POST /chat HTTP/1.1" 200 OK
+2026-08-24 11:04:41 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:56813 - "POST /chat HTTP/1.1" 200 OK
+2026-08-24 11:05:46 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 3
+INFO:     127.0.0.1:65131 - "POST /chat HTTP/1.1" 200 OK
+2026-08-24 11:07:22 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 5
+INFO:     127.0.0.1:54212 - "POST /chat HTTP/1.1" 200 OK
+POST /chat → 422 (0.004s)
+INFO:     127.0.0.1:61117 - "POST /chat HTTP/1.1" 422 Unprocessable Content
+POST /chat → 422 (0.003s)
+INFO:     127.0.0.1:61118 - "POST /chat HTTP/1.1" 422 Unprocessable Content
+POST /chat → 422 (0.004s)
+INFO:     127.0.0.1:61119 - "POST /chat HTTP/1.1" 422 Unprocessable Content
+POST /chat → 422 (0.004s)
+INFO:     127.0.0.1:61120 - "POST /chat HTTP/1.1" 422 Unprocessable Content
+2026-08-24 11:09:13 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+2026-08-24 11:09:13 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+2026-08-24 11:09:13 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+2026-08-24 11:09:13 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:61123 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61122 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61121 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61124 - "POST /chat HTTP/1.1" 200 OK
+2026-08-24 11:12:53 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:56911 - "POST /chat HTTP/1.1" 200 OK
+2026-08-24 11:14:02 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:65153 - "POST /chat HTTP/1.1" 200 OK
+2026-08-24 11:15:07 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 3
+INFO:     127.0.0.1:61721 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51983 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51986 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 11:17:29 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:51988 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51252 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 11:19:42 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 3
+INFO:     127.0.0.1:51254 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59251 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59254 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53006 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57339 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 11:23:17 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:55496 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62137 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62139 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56863 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63483 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 11:24:31 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:63485 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56076 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56078 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60414 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53818 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 11:26:02 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:53820 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64404 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60331 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63348 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63350 - "GET /health HTTP/1.1" 200 OK
+2026-08-24 11:28:16 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 1
+INFO:     127.0.0.1:63352 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64920 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49677 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49679 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49681 - "GET /health HTTP/1.1" 200 OK
+POST /chat → 401 (0.002s)
+INFO:     127.0.0.1:49684 - "POST /chat HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:62682 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62682 - "GET /openapi.json HTTP/1.1" 200 OK
+2026-08-24 11:32:41 INFO     [chatbot_api] 채팅 요청 — 사용자: 사용자A, 메시지 수: 3
+INFO:     127.0.0.1:57670 - "POST /chat HTTP/1.1" 200 OK
